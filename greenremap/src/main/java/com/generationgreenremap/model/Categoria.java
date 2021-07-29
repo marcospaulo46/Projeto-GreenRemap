@@ -13,6 +13,8 @@ import javax.validation.constraints.Size;
 @Table(name = "categoria")
 public class Categoria {
 	
+	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -26,7 +28,37 @@ public class Categoria {
 	
 	@Size(min = 5, max = 5000, message = "O atributo caracteristica deve conter no mínimo 5 e no  máximo 500 caracteres")
 	private String caracteristica;
-	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNome_categoria() {
+		return nome_categoria;
+	}
+
+	public void setNome_categoria(String nome_categoria) {
+		this.nome_categoria = nome_categoria;
+	}
+
+	public String getPalavra_chave() {
+		return palavra_chave;
+	}
+
+	public void setPalavra_chave(String palavra_chave) {
+		this.palavra_chave = palavra_chave;
+	}
+
+	public String getCaracteristica() {
+		return caracteristica;
+	}
+
+	public void setCaracteristica(String caracteristica) {
+		this.caracteristica = caracteristica;
+	}
 	
 
 }
