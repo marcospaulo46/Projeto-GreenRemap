@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\casa\OneDrive\Área de Trabalho\GreeRemap\.metadata\.plugins\org.eclipse.jdt.core
+1680895701.index
